@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/Estilos.css">
+    <title>Nómada Picnic</title>
+    <style>
+      /* Media queries */
+      @media (max-width: 767px) {
+          /* celular*/
+          .pic {
+              font-size: 16px;
+          }
+      }
+      
+      @media (min-width: 768px) and (max-width: 991px) {
+          /* tablet*/
+          .pic {
+              font-size: 18px;
+          }
+      }
+      
+      @media (min-width: 992px) {
+          /* desktop */
+          .pic {
+              font-size: 20px;
+          }
+      }
+  </style>
+</head>
+<body>
+  <div class="fondo"></div>
+
+  <header>
+    <h1 class="titulo"> NÓMADA PICNIC🧺</h1>
+    <nav>
+      <ul>
+        <li><a class="item" href="index.html">Inicio</a></li>
+        <li><a class="item" href="Pages/Productos.html">Productos</a></li>
+        <li><a class="item" href="Pages/QuienesSomos.html">¿Quiénes somos?</a></li>
+        <li><a class="item" href="Pages/Contacto.html">Contacto</a></li>
+        <li><a class="item" href="Pages/PreguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bloque">
+      <h2 class="h2">✨Creamos momentos inolvidables✨</h2>
+      <h3 class="h3">¡HOLA!</h3>
+      <p class="parra">Estamos muy contentos de que estes aqui, Conoce nuestros productos:</p>
+    </section>
+
+    <div class="pic">
+      <a href="../p/Pages/Productos.html" style="color: #da637c;">Picnics</a>
+    </div>
+    
+    
+
+    <div class="d-flex justify-content-center align-items-center">
+      <div id="Micarrusel" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#Micarrusel" data-slide-to="0" class="active"></li>
+          <li data-target="#Micarrusel" data-slide-to="1"></li>
+          <li data-target="#Micarrusel" data-slide-to="2"></li>
+        </ul>
+      
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Img/carru1.png" alt="Imagen 1" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="Img/carru2.png" alt="Imagen 2" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="Img/carru3.png" alt="Imagen 3" class="d-block w-100">
+          </div>
+        </div>
+      
+        <a class="carousel-control-prev" href="#Micarrusel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#Micarrusel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+    </div>
+  </main>
+  
+  <footer style="background-color: pink;" class="py-3">
+    <div class="container text-center">
+      <p class="mb-0">2023 Nómada Picnic. Todos los derechos reservados.</p>
+      <div class="social-icons mt-2">
+        <a href="https://www.instagram.com/nomadapicnic/?hl=es/" target="_blank" class="text-dark mx-3">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+        <a href="https://api.whatsapp.com/message/H7IOYPAYKWBON1?autoload=1&app_absent=0" target="_blank" class="text-dark mx-3">
+          <i class="fab fa-whatsapp fa-lg"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>
+
