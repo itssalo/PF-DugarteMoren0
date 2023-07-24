@@ -1,0 +1,255 @@
+// Variables
+$color-primary: #da637c;
+$color-secondary: #f9f9f9;
+$color-text: whitesmoke;
+$color-highlight: pink;
+
+// Mixin
+@mixin font-face($font-family, $font-url) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-url) format('truetype');
+  }
+}
+
+// Import
+@import '../Font/RobotoMono-ExtraLight.ttf';
+
+// Estilos generales
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fondomarca {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Img/Fondo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+header {
+  background-color: $color-primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  // Nesting y extend
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      font-size: large;
+      font-family: 'Times New Roman', Times, serif;
+    }
+  }
+}
+
+.titulo {
+  color: $color-text;
+  font-size: 3em;
+  font-family: 'RobotoMono-ExtraLight';
+}
+
+.item {
+  color: $color-text;
+  text-decoration: solid;
+}
+
+.h2 {
+  color: $color-primary;
+  font-family: 'RobotoMono-ExtraLight';
+}
+
+.h3 {
+  color: $color-primary;
+  padding-top: xx-large;
+  font-family: 'RobotoMono-ExtraLight';
+}
+
+.h4 {
+  color: $color-primary;
+  font-family: 'RobotoMono-ExtraLight';
+  text-align: center;
+}
+
+.parra {
+  color: $color-primary;
+  font-size: 1em;
+  font-family: 'RobotoMono-ExtraLight';
+}
+
+.bloque {
+  text-align: center;
+  padding-top: 1em;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.pic {
+  color: $color-primary;
+  text-decoration: none;
+  font-family: 'RobotoMono-ExtraLight';
+  text-align: center;
+}
+
+a:hover {
+  color: $color-highlight;
+}
+
+.carousel-item img {
+  width: 500px;
+  height: 900px;
+  transition: transform 0.9s ease-in-out;
+  object-fit: cover;
+}
+
+// Quienes Somos
+.quienessomosparrafo {
+  text-align: center;
+  color: $color-primary;
+  margin: 0 2em;
+  padding: 0 1em;
+  margin-top: 2em;
+  font-family: 'RobotoMono-ExtraLight';
+}
+
+.imagenquienessomos {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50em;
+  height: 50em;
+  padding-top: 1em;
+}
+
+// Productos
+.productos {
+  font-family: 'RobotoMono-ExtraLight';
+  color: $color-primary;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.product {
+  background-color: $color-secondary;
+  border-radius: 25px;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.imgpro {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-bottom: 80px;
+}
+
+.product h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+  
+}
+
+// Contactos
+.contacto p {
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'RobotoMono-ExtraLight';
+  font-size: 20px;
+  color: $color-primary;
+  margin-bottom: 20px;
+}
+
+contacto-formas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto-formas div {
+  margin: 50px;
+}
+
+.contacto-formas a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: $color-primary;
+  padding-top: 200px;
+  margin-bottom: 325px;
+  /* Agregue una transicion para animar el tamaño del icono y el color del texto al hacer hover */
+  transition: transform 0.8s ease-in-out, color 0.8s ease-in-out;
+}
+
+.contacto-formas a i {
+  font-size: 100px;
+  margin-bottom: 150px;
+}
+
+.contacto-formas a span {
+  font-size: 25px;
+}
+
+.contacto-formas a:hover {
+  color: #ff6b6b;
+  /* Al hacer hover, reducimos el tamaño del icono y lo rotamos ligeramente */
+  transform: scale(0.9) rotate(5deg);
+}
+
+// Estilos de Preguntas Frecuentes
+.PreguntasFrecuentes1,
+.PreguntasFrecuentes2,
+.PreguntasFrecuentes3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.PreguntasFrecuentes1 img,
+.PreguntasFrecuentes2 img,
+.PreguntasFrecuentes3 img {
+  max-width: 200px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.PreguntasFrecuentes1 h5,
+.PreguntasFrecuentes2 h5,
+.PreguntasFrecuentes3 h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: $color-primary;
+}
+
+.PreguntasFrecuentes1 p,
+.PreguntasFrecuentes2 p,
+.PreguntasFrecuentes3 p {
+  font-size: 16px;
+  color: $color-primary;
+  margin-bottom: 10px;
+}
+
+// Footer
+.abajo {
+  color: $color-primary;
+  margin-top: 3rem;
+  text-align: center;
+}
+
