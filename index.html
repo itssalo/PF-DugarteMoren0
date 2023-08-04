@@ -13,39 +13,31 @@
 
       /* Media queries */
       @media (max-width: 320px) {
-          /* Extra small devices (phones) */
+          /*Celulares */
           .pic {
               font-size: 14px;
           }
-          /* Additional styles for extra small devices */
-          /* Add your styles here */
       }
 
       @media (min-width: 321px) and (max-width: 767px) {
-          /* Small devices (landscape phones, portrait tablets) */
+          /* Tablets */
           .pic {
               font-size: 16px;
           }
-          /* Additional styles for small devices */
-          /* Add your styles here */
       }
 
       @media (min-width: 768px) and (max-width: 991px) {
-          /* Medium devices (landscape tablets, small laptops) */
+          /* laptops) */
           .pic {
               font-size: 18px;
           }
-          /* Additional styles for medium devices */
-          /* Add your styles here */
       }
 
       @media (min-width: 992px) {
-          /* Large devices (laptops and desktops) */
+          /* laptops and desktops*/
           .pic {
               font-size: 20px;
           }
-          /* Additional styles for large devices */
-          /* Add your styles here */
       }
     </style>
 </head>
@@ -53,15 +45,30 @@
   <div class="fondo"></div>
 
   <header>
-    <h1 class="titulo"> NÓMADA PICNIC🧺</h1>
-    <nav>
-      <ul>
-        <li><a class="item" href="index.html">Inicio</a></li>
-        <li><a class="item" href="Pages/Productos.html">Productos</a></li>
-        <li><a class="item" href="Pages/QuienesSomos.html">¿Quiénes somos?</a></li>
-        <li><a class="item" href="Pages/Contacto.html">Contacto</a></li>
-        <li><a class="item" href="Pages/PreguntasFrecuentes.html">Preguntas Frecuentes</a></li>
-      </ul>
+    <h1 class="titulo text-center">NÓMADA PICNIC🧺</h1>
+    <nav class="navbar navbar-expand-md navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div style="background-color: #da637c"; class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html" style="color: whitesmoke;">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Pages/Productos.html" style="color: whitesmoke;">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Pages/QuienesSomos.html" style="color: whitesmoke;">¿Quiénes somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Pages/Contacto.html" style="color: whitesmoke;">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Pages/PreguntasFrecuentes.html" style="color: whitesmoke;">Preguntas Frecuentes</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -73,7 +80,7 @@
     </section>
 
     <div class="pic">
-      <a href="../p/Pages/Productos.html" style="color: #da637c;" title="Ver picnics disponibles">Picnics</a>
+      <a href="./Pages/Productos.html" style="color: #da637c;" title="Ver picnics disponibles">Haz clic aqui para ver nuestros Productos:</a>
     </div>
     
     <div class="d-flex justify-content-center align-items-center">
@@ -86,13 +93,13 @@
       
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="Img/carru1.png" alt="Imagen de picnic en floralis generica" class="d-block w-100">
+            <img src="./Img/carru1.jpg" alt="Imagen de picnic en floralis generica" class="d-block w-100">
           </div>
           <div class="carousel-item">
-            <img src="Img/carru2.png" alt="Imagen de personas en picnic" class="d-block w-100">
+            <img src="./Img/carru2.JPG" alt="Imagen de personas en picnic" class="d-block w-100">
           </div>
           <div class="carousel-item">
-            <img src="Img/carru3.png" alt="Imagen de picnic para pareja" class="d-block w-100">
+            <img src="./Img/carru3.jpg" alt="Imagen de picnic para pareja" class="d-block w-100">
           </div>
         </div>
       
@@ -111,5 +118,14 @@
   <footer style="background-color: pink;" class="py-3">
     <div class="container text-center">
       <p class="mb-0">2023 Nómada Picnic. Todos los derechos reservados.</p>
-      <div class="social-icons mt-2">
-        <a href
+      <a style=" color: #da637c;" " class="py-3" href="https://api.whatsapp.com/message/H7IOYPAYKWBON1?autoload=1&app_absent=0">Escribenos por Whatsapp</a>
+      
+    </div>
+  </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

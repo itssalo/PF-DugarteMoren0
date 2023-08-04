@@ -39,21 +39,25 @@ header {
 
 .h2 {
   color: #da637c;
+  font-size: 2em;
   font-family: 'RobotoMono-ExtraLight'; }
 
 .h3 {
   color: #da637c;
-  padding-top: xx-large;
+  padding-top: 1em;
+  font-size: 2em;
   font-family: 'RobotoMono-ExtraLight'; }
 
 .h4 {
   color: #da637c;
   font-family: 'RobotoMono-ExtraLight';
+  padding-top: 1em;
+  font-size: 2em;
   text-align: center; }
 
 .parra {
   color: #da637c;
-  font-size: 1em;
+  font-size: 1.5em;
   font-family: 'RobotoMono-ExtraLight'; }
 
 .bloque {
@@ -77,19 +81,19 @@ a:hover {
   object-fit: cover; }
 
 .quienessomosparrafo {
-  text-align: center;
+  text-align:center;
   color: #da637c;
-  margin: 0 2em;
-  padding: 0 1em;
-  margin-top: 2em;
+  font-size: 20px;
+  margin-top: 1em;
+  margin: 0.5em;
   font-family: 'RobotoMono-ExtraLight'; }
 
 .imagenquienessomos {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50em;
-  height: 50em;
+  width: 20em;
+  height: 20em;
   padding-top: 1em; }
 
 .productos {
@@ -97,7 +101,10 @@ a:hover {
   color: #da637c;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px; }
+  grid-gap: 20px;
+  font-size: 2em;
+}
+ 
 
 .product {
   background-color: #f9f9f9;
@@ -123,19 +130,20 @@ a:hover {
 
 .contacto p {
   margin-top: 50px;
+  margin: 0.5em;
   text-align: center;
   font-family: 'RobotoMono-ExtraLight';
-  font-size: 20px;
+  font-size: 1.5em;
   color: #da637c;
   margin-bottom: 20px; }
 
 .contacto-formas {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center; }
 
 .contacto-formas div {
-  margin: 50px; }
+  margin: 10px; }
 
 .contacto-formas a {
   display: flex;
@@ -143,15 +151,21 @@ a:hover {
   align-items: center;
   text-decoration: none;
   color: #da637c;
-  padding-top: 200px;
-  margin-bottom: 325px; }
+  padding-top: 55px;
+  margin-bottom: 200px; 
+  margin: 0.5em; 
+}
 
 .contacto-formas a i {
   font-size: 100px;
-  margin-bottom: 150px; }
+  margin-top: 0.5px;
+  }
 
 .contacto-formas a span {
-  font-size: 25px; }
+  font-size: 2em;
+ 
+
+}
 
 .contacto-formas a:hover {
   color: #ff6b6b; }
@@ -181,7 +195,10 @@ a:hover {
 .PreguntasFrecuentes3 p {
   font-size: 16px;
   color: #da637c;
-  margin-bottom: 10px; }
+  margin-bottom: 10px; 
+  margin: 0.5em;
+}
+  
 
 .abajo {
   color: #da637c;
